@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "dfx_starter_backend": {
+      "main": "src/dfx_starter_backend/main.mo",
+      "type": "motoko"
+    },
+    "dfx_starter_frontend": {
+      "dependencies": [
+        "dfx_starter_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/dfx_starter_frontend/src/index.html"
+      },
+      "source": [
+        "src/dfx_starter_frontend/assets",
+        "dist/dfx_starter_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
